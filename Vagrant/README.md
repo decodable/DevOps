@@ -103,3 +103,4 @@ vagrant plugin install vagrant-disksize
 
 # References
 1. [Official Website](https://www.vagrantup.com/)
+2. [Creating a Base Box](https://www.vagrantup.com/docs/virtualbox/boxes.html)
