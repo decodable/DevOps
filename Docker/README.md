@@ -1,12 +1,12 @@
 # Overview
 ![Docker Overview](images/Docker.svg)
 
-1. docker build - build an image from a Docker file.
-2. docker commit - commit the change in a container to an image.
-3. docker save - save an image to a local file - tarball.
-4. docker load - load an image from a local file.
-5. docker pull - load in image from a repository - docker hub
-6. docker push - save an image to a repository.
+1. docker build - build an image from a Docker file. 
+2. docker save - save an image to a local file - tarball.
+3. docker load - load an image from a local file.
+4. docker pull - load in image from a repository - docker hub
+5. docker push - save an image to a repository.
+6. docker commit - commit the change in a container to an image.
 
 It is better to use Dockerfiles to manage images in a documented and maintainable way.
 
