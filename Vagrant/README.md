@@ -1,3 +1,6 @@
+# Overview
+![Vagrant Overview](images/Vagrant.svg)
+
 # Quick start
 
 Configuration file _Vagrantfile_
