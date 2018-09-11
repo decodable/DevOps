@@ -1,6 +1,17 @@
 # Overview
 ![Docker Overview](images/Docker.svg)
 
+1. docker build - build an image from a Docker file.
+2. docker commit - commit the change in a container to an image.
+3. docker save - save an image to a local file - tarball.
+4. docker load - load an image from a local file.
+5. docker pull - load in image from a repository - docker hub
+6. docker push - save an image to a repository.
+
+It is better to use Dockerfiles to manage images in a documented and maintainable way.
+
+However, docker images will save you time of buillding and make sure all can get the same container.
+
 # Images
 ```
 docker pull ubuntu:16.04
@@ -33,15 +44,6 @@ docker top
 docker diff
 ```
 
-# Images <=> Container
-1. docker build - build image from Docker file.
-2. docker commit - commit the change in a container to image.
-3. docker save - save an image to a local file - tarball.
-4. docker load - load an image from a local file.
-5. docker pull - load in image from a repository - docker hub
-6. docker push - save an image to a repository.
-
-it is better to use Dockerfiles to manage images in a documented and maintainable way. 
 
 # References
 1. [Understanding Docker "Container Host" vs. "Container OS" for Linux and Windows Containers](http://www.floydhilton.com/docker/2017/03/31/Docker-ContainerHost-vs-ContainerOS-Linux-Windows.html)
