@@ -29,7 +29,8 @@ git checkout {branch to switch}
 ```
 
 # Reference
-1. [Git in Bash](https://git-scm.com/book/en/v2/Git-in-Other-Environments-Git-in-Bash)
-2. [Git push requires username and password](http://stackoverflow.com/questions/6565357/git-push-requires-username-and-password)
-3. [Grip -- GitHub Readme Instant Preview](https://github.com/joeyespo/grip)
+1. [Git](https://git-scm.com/docs/git)
+2. [Git in Bash](https://git-scm.com/book/en/v2/Git-in-Other-Environments-Git-in-Bash)
+3. [Git push requires username and password](http://stackoverflow.com/questions/6565357/git-push-requires-username-and-password)
+4. [Grip -- GitHub Readme Instant Preview](https://github.com/joeyespo/grip)
 
