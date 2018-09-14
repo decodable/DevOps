@@ -29,7 +29,7 @@ Container is an instance of image.
 ```
 docker ps -a
 docker inspect
-docker run --rm -it -v /data:/data:rw -p 3002:3002 3107e358f41c --cap-add=SYS_PTRACE /bin/bash
+docker run --rm -it -v /data:/data:rw --cap-add=SYS_PTRACE -p 3002:3002 3107e358f41c /bin/bash
 docker create
 docker start
 docker exec -ti 3107e358f41c /bin/bash
