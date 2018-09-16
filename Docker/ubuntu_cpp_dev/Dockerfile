@@ -2,8 +2,13 @@ FROM ubuntu:18.04
 RUN apt-get update && apt-get install -q -y \
       build-essential cmake \
       gdb strace \
-      libgtest-dev valgrind cppcheck \
+      valgrind cppcheck \
       git \
+      && rm -rf /var/lib/apt/lists/*
+
+RUN apt-get update && apt-get install -q -y \
+      libgtest-dev \
+      libboost-all-dev \
       && rm -rf /var/lib/apt/lists/*
 
 ENV GTEST_DIR=/usr/src/googletest
