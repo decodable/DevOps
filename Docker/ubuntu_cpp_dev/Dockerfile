@@ -1,5 +1,10 @@
 FROM ubuntu:18.04
-RUN apt-get update && apt-get install -y build-essential gdb strace cmake libgtest-dev valgrind cppcheck
+RUN apt-get update && apt-get install -q -y \
+      build-essential cmake \
+      gdb strace \
+      libgtest-dev valgrind cppcheck \
+      git \
+      && rm -rf /var/lib/apt/lists/*
 
 ENV GTEST_DIR=/usr/src/googletest
 ENV GTEST_BUILD_DIR=$GTEST_DIR/build
