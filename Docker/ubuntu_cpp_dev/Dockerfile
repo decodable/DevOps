@@ -11,11 +11,11 @@ RUN apt-get update && apt-get install -q -y \
       libboost-all-dev \
       && rm -rf /var/lib/apt/lists/*
 
-ENV GTEST_DIR=/usr/src/googletest
-ENV GTEST_BUILD_DIR=$GTEST_DIR/build
-RUN mkdir -p $GTEST_BUILD_DIR \
-      && cd $GTEST_BUILD_DIR \
-      && cmake -DBUILD_SHARED_LIBS=ON $GTEST_DIR && make && make install \
-      && cd / && rm -rf $GTEST_BUILD_DIR && apt-get remove -y libgtest-dev
+ARG GTEST_DIR=/usr/src/googletest
+
+WORKDIR $GTEST_DIR
+WORKDIR build
+RUN cmake -DBUILD_SHARED_LIBS=ON $GTEST_DIR && make && make install \
+      && rm -rf * && apt-get remove -y libgtest-dev
 
 CMD ["bash"]
