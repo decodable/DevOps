@@ -103,6 +103,7 @@ vagrant plugin install vagrant-disksize
 ## Vagrantfiles
 
 1. [Vagrantfile-ubuntu-16.04](Vagrantfile-ubuntu-16.04) uses chef cookbooks [here](../Chef/cookbooks/), which have my own public key in [authorized_keys](../Chef/cookbooks/webdev/files/default/etc/skel/.ssh/authorized_keys).
+2. [Vagrantfile-ubuntu-16.04-xfce4](Vagrantfile-ubuntu-16.04-xfce4), which is almost same as [Vagrantfile-ubuntu-16.04](Vagrantfile-ubuntu-16.04), but with xfce4 installed.
 
 # References
 1. [Official Website](https://www.vagrantup.com/)
