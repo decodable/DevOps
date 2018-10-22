@@ -45,6 +45,12 @@ docker top
 docker diff
 ```
 
+# Start GUI program in Container from virtual machine
+```
+export DISPALY=:0.0
+ssh -X localhost
+docker run --rm -it --env="DISPLAY" -v /data/:/data/:rw --volume="$HOME/.Xauthority:/root/.Xauthority:rw" --net=host codible/ml_dev /bin/bash
+```
 
 # References
 1. [Understanding Docker "Container Host" vs. "Container OS" for Linux and Windows Containers](http://www.floydhilton.com/docker/2017/03/31/Docker-ContainerHost-vs-ContainerOS-Linux-Windows.html)
