@@ -33,4 +33,5 @@ git checkout {branch to switch}
 2. [Git in Bash](https://git-scm.com/book/en/v2/Git-in-Other-Environments-Git-in-Bash)
 3. [Git push requires username and password](http://stackoverflow.com/questions/6565357/git-push-requires-username-and-password)
 4. [Grip -- GitHub Readme Instant Preview](https://github.com/joeyespo/grip)
+5. [Learn git concepts, not commands](https://dev.to/unseenwizzard/learn-git-concepts-not-commands-4gjc)
 
