@@ -79,6 +79,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision "docker"
 
   config.vm.provision "chef_solo" do |chef|
+    chef.custom_config_path = "../data/decodable/DevOps/Chef/CustomConfiguration.chef"
     chef.cookbooks_path = "../Data/decodable/DevOps/Chef/cookbooks/"
     chef.add_recipe "webdev::packages"
     chef.add_recipe "webdev::users"
