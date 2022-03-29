@@ -1,5 +1,5 @@
 # Overview
-![Docker Overview](images/Docker.svg)
+![Docker Overview](http://interactive.blockdiag.com/image?compression=deflate&encoding=base64&src=eJx9kMFOhDAURffzFS_j2qDGuKmaDCDGxJVbY8iDdqCZymvaMmrM_LulTEcIxq4o5_T29VaK6h2X2AD3H8LA9wr84mKLvXKlbVELuANDfccFr-iTzXjjgS5rUmS8tT4rwlqPktXYlR-Su9azy6sLBpAk8SjsUfUCpIWb61XQN_CqsBJqCMrDMFupxPptDEsXFJ7esTnxbMkz6hzKTpjo5BPnUTp4EZqsdGS-ovEwMZ6pRgW5tLtIi-Ud84hghU6OPYZ3MUgZZOz0g4wUfjInqfNJmowzKN3ID39G5AyKyI8vuT2_nzWme9smulfqd9hBSf9TNjAYsd9Bz6abaRmKkCcW96Hvww9Mm5zY)
 
 1. docker build - build an image from a Docker file. 
 2. docker save - save an image to a local file - tarball.
