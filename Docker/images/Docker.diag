@@ -1,0 +1,26 @@
+blockdiag docker {
+    default_shape = roundedbox;
+    default_group_color = "#FFFFFF";
+    span_width = 120;  // default value is 64
+
+    A [label = "Dockerfile"];
+    B [label = "Docker Image"];
+    C [label = "Docker Container"];
+    D [label = "Git Repository"];
+    E [label = "Local Disk"];
+    F [label = "Docker Repository"];
+
+    group {
+        A; B; C;
+        orientation = portrait;
+    }
+    group {
+        D; F;
+    }
+
+    D <-> A [label = "push/pull"];
+    F <-> B [label = "push/pull"];
+    A -> B;
+    B <-> C;
+    B <-> E [label = "load/save"];
+}
