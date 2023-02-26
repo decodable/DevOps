@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:22.04
 RUN apt-get update && apt-get install -q -y \
       build-essential cmake \
       gdb strace \
@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -q -y \
 RUN apt-get update && apt-get install -q -y \
       libgtest-dev \
       libboost-all-dev \
+      python-is-python3 \
       && rm -rf /var/lib/apt/lists/*
 
 ARG GTEST_DIR=/usr/src/googletest
